@@ -19,9 +19,9 @@ class Utilities {
         {
           opcode: 'isExactly',
 
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
 
-          text: 'is [A] を半角にする',
+          text: '[t] を半角にする',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
@@ -204,7 +204,7 @@ class Utilities {
     }
   }
 
-  isExactly({A}) {
+  isExactly({t}) {
     function toHalfWidth(value) {
     var s = "";
     value = String(value);
