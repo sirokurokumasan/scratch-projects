@@ -21,7 +21,7 @@ class Utilities {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[t] を半角にする',
+          text: '[A] を半角にする',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
@@ -204,7 +204,7 @@ class Utilities {
     }
   }
 
-  isExactly({t}) {
+  isExactly({A}) {
     function toHalfWidth(value) {
     var s = "";
     value = String(value);
@@ -213,7 +213,7 @@ class Utilities {
         if (t.search(/[Ａ-Ｚａ-ｚ０-９]/g) == 0) {
             s += String.fromCharCode(t.charCodeAt(0) - 65248);
         } else {
-            s += t;
+            s += A;
         }
       }
     return s;
