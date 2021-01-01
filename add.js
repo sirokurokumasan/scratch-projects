@@ -26,7 +26,7 @@ class Utilities {
             A: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'ａｐｐｌｅ'
-            }
+        }
             
         {
           opcode: 'isLessOrEqual',
