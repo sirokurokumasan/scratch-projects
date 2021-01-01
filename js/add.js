@@ -20,7 +20,7 @@ class Utilities {
         {
           opcode: 'hankaku',
           blockType: Scratch.BlockType.REPORTER,
-          text: '[A] を半角にする',
+          text: '[value] を半角にする',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
@@ -197,20 +197,14 @@ class Utilities {
     }
   }
 
-  hankaku({A}) {
-    function toHalfWidth(value) {
-    var s = "";
-    value = String(A);
-    for (var n=0;n<value.length;n++) {
-        var A = value.substr(n,1);
-        if (A.search(/[Ａ-Ｚａ-ｚ０-９]/g) == 0) {
-            s += String.fromCharCode(A.charCodeAt(0) - 65248);
-        } else {
-            s += A;
-        }
-      }
-    }
-    return s;
+  hankaku({value}) {
+    var toHalfWidth = function(value) {
+        if (!value) return value;
+        return String(value).replace(/[！-～]/g, function(all) {
+            return String.fromCharCode(all.charCodeAt(0) - 0xFEE0);
+        });
+    };
+    return result;
   }
 
   isLessOrEqual({A, B}) {
