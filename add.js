@@ -210,7 +210,7 @@ class Utilities {
         }
       }
     }
-    return s;
+    return "s";
   }
 
   isLessOrEqual({A, B}) {
