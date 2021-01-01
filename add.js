@@ -28,7 +28,7 @@ class Utilities {
               defaultValue: 'ａｐｐｌｅ'
             }
             
-          {
+        {
           opcode: 'isLessOrEqual',
 
           blockType: Scratch.BlockType.BOOLEAN,
