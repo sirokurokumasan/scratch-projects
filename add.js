@@ -19,7 +19,7 @@ class Utilities {
         
         {
           opcode: 'hankaku',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
           text: '[A] を半角にする',
           arguments: {
             A: {
