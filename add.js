@@ -202,9 +202,9 @@ class Utilities {
     var s = "";
     value = String(A);
     for (var n=0;n<value.length;n++) {
-        var t = value.substr(n,1);
+        var A = value.substr(n,1);
         if (A.search(/[Ａ-Ｚａ-ｚ０-９]/g) == 0) {
-            s += String.fromCharCode(t.charCodeAt(0) - 65248);
+            s += String.fromCharCode(A.charCodeAt(0) - 65248);
         } else {
             s += A;
         }
