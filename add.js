@@ -200,15 +200,16 @@ class Utilities {
   hankaku({A}) {
     function toHalfWidth(value) {
     var s = "";
-    value = String(value);
+    value = String(A);
     for (var n=0;n<value.length;n++) {
         var t = value.substr(n,1);
-        if (t.search(/[Ａ-Ｚａ-ｚ０-９]/g) == 0) {
+        if (A.search(/[Ａ-Ｚａ-ｚ０-９]/g) == 0) {
             s += String.fromCharCode(t.charCodeAt(0) - 65248);
         } else {
             s += A;
         }
       }
+    }
     return s;
   }
 
