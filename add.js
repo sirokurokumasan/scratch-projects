@@ -215,9 +215,9 @@ class Utilities {
         } else {
             s += t;
         }
-    }
+      }
     return s;
-}
+  }
 
   isLessOrEqual({A, B}) {
     return A <= B;
