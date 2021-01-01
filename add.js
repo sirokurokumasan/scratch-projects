@@ -16,23 +16,22 @@ class Utilities {
       menuIconURI: icon,
 
       blocks: [
+        
         {
-          opcode: 'isExactly',
-
-          blockType: Scratch.BlockType.REPORTER,
-
+          opcode: 'hankaku',
+          blockType: Scratch.BlockType.BOOLEAN,
           text: '[A] を半角にする',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'ａｐｐｌｅ'
-        }
+            }
+          }
+        },
             
         {
           opcode: 'isLessOrEqual',
-
           blockType: Scratch.BlockType.BOOLEAN,
-
           text: '[A] <= [B]',
           arguments: {
             A: {
@@ -46,9 +45,7 @@ class Utilities {
         },
         {
           opcode: 'isMoreOrEqual',
-
           blockType: Scratch.BlockType.BOOLEAN,
-
           text: '[A] >= [B]',
           arguments: {
             A: {
@@ -92,9 +89,7 @@ class Utilities {
         },
         {
           opcode: 'ternaryOperator',
-
           blockType: Scratch.BlockType.REPORTER,
-
           text: 'if [A] then [B] else [C]',
           arguments: {
             A: {
@@ -112,9 +107,7 @@ class Utilities {
         },
         {
           opcode: 'letters',
-
           blockType: Scratch.BlockType.REPORTER,
-
           text: 'letters [START] to [END] of [STRING]',
           arguments: {
             START: {
@@ -204,7 +197,7 @@ class Utilities {
     }
   }
 
-  isExactly({A}) {
+  hankaku({A}) {
     function toHalfWidth(value) {
     var s = "";
     value = String(value);
