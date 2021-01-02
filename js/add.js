@@ -23,8 +23,8 @@ class Utilities {
           text: '[value] を半角にする',
           arguments: {
             A: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'ａｐｐｌｅ'
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: '１２３'
             }
           }
         },
