@@ -6,13 +6,10 @@ class Add1{
       name:'便利系'
       blocks[
         {opcode:'aa',
-         blockType: Scratch.BlockType.REPORTER,
+         blockType: Scratch.BlockType.REPORTER,}
+      ]
     }
-        {
-        opcode:'event_whenflagclicked'
-        blockType: Scratch.BlockType.COMMAND,
-        text: '旗を押す'
-        }
+  }
   aa(){
   }
 }
