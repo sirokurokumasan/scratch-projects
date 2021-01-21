@@ -15,7 +15,7 @@ class Add1{
     }
   }
   and(){
-    return A + B + C;
+    return A : B : C;
   }
 }
 Scratch.extensions.register(new Add1())
