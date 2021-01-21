@@ -1,6 +1,6 @@
 class Add1{
   constructor(){}
-  getInfo(){}
+  getInfo(){
     return{
       id:'add1'
       name:'便利系'
@@ -18,5 +18,4 @@ class Add1{
     return A B C;
   }
 }
-          
 Scratch.extensions.register(new Add1())
