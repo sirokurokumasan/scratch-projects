@@ -5,12 +5,28 @@ class Add1{
       id:'add1'
       name:'便利系'
       blocks[
-        {opcode:'aa',
-         blockType: Scratch.BlockType.REPORTER,}
+        {opcode:'and',
+         blockType: Scratch.BlockType.REPORTER,
+         text:'[A]と[B]と[C]'
+         arguments: {
+            A: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'ねこ好きよ、集まれ。'
+            },
+            B: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'にゃんにゃん♪'
+            },
+            C: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'わーい！わーい！'
+            },
+        }
       ]
     }
   }
-  aa(){
+  and({A,B,C}){
+    return A B C;
   }
 }
           
